@@ -27,15 +27,15 @@
     <div class="features">
       <ul>
         <li class="feature-item">
-          <h2>Выбор</h2>
+          <h2 class="feature-title">Выбор</h2>
           <p>Ваш питомец оценит широту нашего ассортимента аксессуаров.</p>
         </li>
         <li class="feature-item">
-          <h2>Качество</h2>
+          <h2 class="feature-title">Качество</h2>
           <p>Наши товары не сломаются на второй день. Только на третий.</p>
         </li>
         <li class="feature-item">
-          <h2>Безопасность</h2>
+          <h2 class="feature-title">Безопасность</h2>
           <p>Все изготовлено из натуральных материалов, безопасных для котов.</p>
         </li>
       </ul>
@@ -43,20 +43,20 @@
 
 
     <div class="cat-reference">
-      <h2>Немного теории</h2>
+      <h2 class="section-title">Немного теории</h2>
       <a class="btn" href="#" title="Открыть справочник">Справочник</a>
       <dl>
         <dt>
-          <h3>Окрас кошек и котов</h3>
-          <i>источник: <a target="_blank" href="https://ru.wikipedia.org">wikipedia</a></i>
+          <h3 class="reference-title">Окрас кошек и котов</h3>
+          <i class="reference-source">источник: <a target="_blank" href="https://ru.wikipedia.org">wikipedia</a></i>
         </dt>
         <dd>
           <img src="img/article-1.jpg" alt="Окрас кошек и котов" width="100" height="100">
           <p>Окрас шерсти, кожи и глаз кошки обусловлен присутствием в них пигмента меланина. Меланин находится в теле волоса в виде микроскопических гранул, которые различаются по форме, размеру и количеству, что и вызывает различия в окрасе.</p>
         </dd>
         <dt>
-          <h3>Кошкин дом</h3>
-          <i>источник: <a target="_blank" href="http://kotmur.spb.ru">kotmur.spb.ru</a></i>
+          <h3 class="reference-title">Кошкин дом</h3>
+          <i class="reference-source">источник: <a target="_blank" href="http://kotmur.spb.ru">kotmur.spb.ru</a></i>
         </dt>
         <dd>
           <img src="img/article-2.jpg" alt="Кошкин дом" width="100" height="100">
@@ -67,23 +67,23 @@
 
 
     <div class="reviews">
-      <h2>Довольные коты</h2>
+      <h2 class="section-title">Довольные коты</h2>
       <a class="btn" href="#" title="Посмотреть все отзывы">Все отзывы</a>
       <div class="reviews-list">
         <blockquote class="review-item">
           <p>Спасибо Кексу за давно напрашивающуюся идею! Набрал себе очков на все случаи жизни: для чтения и для вечеринки с котанами B-)</p>
-          <cite>Барсик, г. Москва</cite>
+          <cite class="review-author">Барсик, г. Москва</cite>
         </blockquote>
         <blockquote class="review-item">
           <p>Я просто не могу без шоппинга и теперь не нужно тащить хозяйку в магазин, заказываю все аксессуары на сайте у Кекса он-лайн!</p>
-          <cite>Мурка, г. Санкт-Петербург</cite>
+          <cite class="review-author">Мурка, г. Санкт-Петербург</cite>
         </blockquote>
       </div>
     </div>
 
 
     <div class="popular-and-price">
-      <h2>Популярные товары</h2>
+      <h2 class="section-title">Популярные товары</h2>
       <a class="btn" href="#" title="Посмотреть все товары">Каталог</a>
       <div class="popular-items">
         <div class="catalog-item">
@@ -109,7 +109,7 @@
         </div>
       </div>
 
-      <h2>Прайс-лист на услуги</h2>
+      <h2 class="section-title">Прайс-лист на услуги</h2>
       <table class="price-list">
         <tr>
           <th class="price-number">№</th>
@@ -142,6 +142,45 @@
           <td>1550 руб.</td>
         </tr>
       </table>
+    </div>
+
+
+    <div class="feedback">
+      <h2 class="section-title">Остались вопросы?</h2>
+      <p class="feedback-tip">Свяжитесь с нами и мы развеем оставшиеся у вас сомнения!</p>
+      <form class="feedback-form" action="/keksby-mail" method="post">
+        <div class="feedback-form-group">
+          <label for="fullname">Представьтесь, пожалуйста:</label>
+          <input type="text" name="fullname" id="fullname">
+        </div>
+        <div class="feedback-form-group">
+          <label for="phone">Контактный телефон:</label>
+          <input type="text" name="phone" id="phone">
+        </div>
+        <div class="feedback-form-group">
+          <label for="email">Электронная почта:</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="checkbox-area">
+          <label>
+            <input type="checkbox" name="subscription">
+            Я согласен получать спам и смс на телефон
+          </label>
+        </div>
+        <div class="feedback-form-group">
+          <label for="topic">Тема обращения:</label>
+          <select name="topic" id="topic">
+            <option value="1">Условия доставки</option>
+            <option value="2">Возврат товара</option>
+            <option value="3">Жалоба в Роспотребнадзор</option>
+          </select>
+        </div>
+        <div class="feedback-form-group">
+          <label for="message">Текст обращения:</label>
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <input type="submit" class="btn" value="Отправить">
+      </form>
     </div>
 
 
